@@ -109,24 +109,3 @@ char	*get_next_line(int fd)
 	save = line_update(save);
 	return (line);
 }
-
-// int	main(void)
-// {
-// 	int		fd;
-// 	char	*line;
-
-// 	fd = open("test.txt", O_RDONLY);
-// 	if (fd < 0)
-// 	{
-// 		perror("Error fichier");
-// 		return (1);
-// 	}
-// 	while ((line = get_next_line(fd)) != NULL)
-// 	{
-// 		printf("%s", line);
-// 		free(line);
-// 	}
-// 	close(fd);
-// 	return (0);
-// }
-// //	echo "Bonjour\nVoici un test\nTroisième ligne" > test.txt
